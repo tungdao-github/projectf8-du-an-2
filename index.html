@@ -11,81 +11,308 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
         rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assest/css/style.css">
 </head>
 
 <body>
     <!-- ==== Navbar === -->
 
-    <header class="header">
-        <div class="header-navbar">
-            <div class="content">
-                <!-- logo -->
-                <a href="#!" class="logo">
-                    <img src="./assest/img/Lesson..svg" alt="Lesson">
-                </a>
-                <!-- List -->
-                <ul class="list">
-                    <li><a href=""> Home </a></li>
-                    <li><a href=""> Courses </a></li>
-                    <li><a href=""> Pricing </a></li>
-                    <li><a href=""> Reviews </a></li>
-                </ul>
-                <a href="#!" class="link-cta btn">Sign Up</a>
-            </div>
-        </div>
-        <div class="main-header">
-            <div class="content">
-                <div class="img-block">
-                    <img src="./assest/img/guy-lesson 1.svg" alt="Courses" class="img-Courses">
-                    <div class="sub-info">
-                        <div class="item margin-reset-top">
-                            <img src="./assest/img/Orion_page.svg" alt="UI/UX Design">
-                            <div>
-                                <p>20 Courses</p>
-                                <h2>UI/UX Design</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="./assest/img/Orion_code-window.svg" alt="Development">
-                            <div>
-                                <p>20 Courses</p>
-                                <h2>Development</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="./assest/img/Orion_megaphone.svg" alt="30 Courses">
-                            <div>
-                                <p>30 Courses</p>
-                                <h2>Marketing</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info">
-                    <h1 class="title">Learn without limits and spread knowledge.</h1>
-                    <p class="sub-title">Build new skills for that “this is my year” feeling with courses, certificates,
-                        and degrees from
-                        world-class
-                        universities and companies.</p>
-                    <div class="action">
-                        <a href="#!" class="link-cta-courses btn">See Courses</a>
-                        <img src="./assest/img/Polygon 2.svg" alt="Watching">
-                        <a href="#!" class="link-cta-video">Watch Video</a>
-                    </div>
-                    <div class="interact">
-                        <p class="title">Recent engagement</p>
-                        <div class="data">
-                            <p>50K<span> Students </span></p>
-                            <p>70+ <span> Courses </span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- <header class="header"> -->
+    <header class="header-navbar">
+        <div class="content">
+            <!-- logo -->
+            <a href="#!" class="logo">
+                <img src="./assest/img/Lesson..svg" alt="Lesson">
+            </a>
+            <!-- List -->
+            <ul class="list">
+                <li><a href="/"> Home </a></li>
+                <li><a href="#courses"> Courses </a></li>
+                <li><a href="#pricing"> Pricing </a></li>
+                <li><a href=""> Reviews </a></li>
+            </ul>
+            <a href="#!" class="link-cta btn">Sign Up</a>
         </div>
     </header>
+    <!-- </header> -->
+    <div class="main-header">
+        <div class="content">
+            <div class="img-block">
+                <img src="./assest/img/guy-lesson 1.svg" alt="Courses" class="img-Courses">
+                <div class="sub-info">
+                    <div class="item margin-reset-top">
+                        <img src="./assest/img/Orion_page.svg" alt="UI/UX Design">
+                        <div>
+                            <p>20 Courses</p>
+                            <h2>UI/UX Design</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assest/img/Orion_code-window.svg" alt="Development">
+                        <div>
+                            <p>20 Courses</p>
+                            <h2>Development</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assest/img/Orion_megaphone.svg" alt="30 Courses">
+                        <div>
+                            <p>30 Courses</p>
+                            <h2>Marketing</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="info">
+                <h1 class="title">Learn without limits and spread knowledge.</h1>
+                <p class="sub-title">Build new skills for that “this is my year” feeling with courses, certificates,
+                    and degrees from
+                    world-class
+                    universities and companies.</p>
+                <div class="action">
+                    <a href="#!" class="link-cta-courses btn">See Courses</a>
+                    <img src="./assest/img/Polygon 2.svg" alt="Watching">
+                    <a href="#!" class="link-cta-video">Watch Video</a>
+                </div>
+                <div class="interact">
+                    <p class="title">Recent engagement</p>
+                    <div class="data">
+                        <p>50K<span> Students </span></p>
+                        <p>70+ <span> Courses </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <!-- courses -->
+        <div id="courses" class="popular-courses">
+            <div class="content">
+                <div class="row">
+                    <h2 class="title">Our popular courses</h2>
+                    <p class="sub-title">Build new skills with new trendy courses and shine for the next future career.
+                    </p>
+                    <div class="action">
+                        <a href="link-cta cta-1" style="background:#fff; border: 1px solid var(--third-color);"><img
+                                src="./assest/img/Vector 21.svg" alt=""></a>
+                        <a href="link-cta cta-2"><img src="./assest/img/Vector 21 (1).svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box">
+                        <img src="./assest/img/design-basic.svg" alt="design basic">
+                        <div class="info">
+                            <div class="head">
+                                <h3 class="title-head">Basic web design</h3>
+                                <p><img src="./assest/img/Star 6.svg" alt="Star"> <span>4.5</span></p>
+                            </div>
+                            <p class="sub-title-head">Get the best course, gain knowledge and shine for your future
+                                career.
+                            </p>
+                            <div class="group">
+                                <span>$120.75</span>
+                                <a href="#!" class="btn link-cta" style="background-color: var(--third-color);">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="./assest/img/design-UI-UX.svg" alt="design UI, UX">
+                        <div class="info">
+                            <div class="head">
+                                <h3 class="title-head">UI/UX design</h3>
+                                <p><img src="./assest/img/Star 6.svg" alt="Star"> <span>4.5</span></p>
+                            </div>
+
+                            <p class="sub-title-head">Get the best course, gain knowledge and shine for your future
+                                career.
+                            </p>
+                            <div class="group">
+                                <span>$120.75</span>
+                                <a href="#!" class="btn link-cta">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="./assest/img/design-webapp.svg" alt="design webapp">
+                        <div class="info">
+                            <div class="head">
+                                <h3 class="title-head">Web App design</h3>
+                                <p><img src="./assest/img/Star 6.svg" alt="Star"> <span>4.5</span></p>
+                            </div>
+
+
+                            <p class="sub-title-head">Get the best course, gain knowledge and shine for your future
+                                career.
+                            </p>
+                            <div class="group">
+                                <span>$120.75</span>
+                                <a href="#!" class="btn link-cta">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- evaluate -->
+        <div id="pricing" class="evaluate">
+            <div class="content">
+                <div class="box-1">
+                    <img src="./assest/img/Ellipse 2649.svg" alt="avata">
+                    <p class="name-user">Peter Moor</p>
+                    <p class="info-user">Student of Web Design</p>
+                    <div class="bacham">
+                        <span></span>
+                        <span style="background-color: var(--third-color);"></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <img src="./assest/img/phay.svg" alt="phay">
+                    <p class="desc-user">Not only does my resume look impressive—filled with the names and logos of
+                        world-class institutions—but these
+                        certificates also bring me closer to my career goals by validating the skills I've learned."</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- result user -->
+        <div class="result-user">
+            <div class="content">
+                <div class="block">
+                    <img src="./assest/img/img-result-block1.svg" alt="img1" class="img-1">
+                    <img src="./assest/img/img-result-block2.svg" alt="img2" class="img-2">
+                </div>
+
+                <div class="info-result">
+                    <h3 class="title">Learner outcomes through our awesome platform</h3>
+                    <p class="sub-title">87% of people learning for professional development report career benefits like
+                        getting a
+                        promotion, a raise, or
+                        starting a new career.</p>
+                    <p class="report-result">Lesson Impact Report (2022)</p>
+                    <a href="#!" class="link-cta btn">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <!-- join coursera -->
+        <div class="join-coursera">
+            <div class="content">
+                <div class="info-coursera">
+                    <h3 class="title">Take the next step toward your personal and professional goals with Lesson.</h3>
+                    <p class="sub-title">Take the next step toward. Join now to receive personalized and more
+                        recommendations from the
+                        full Coursera catalog.</p>
+                    <a href="#!" class="btn link-cta">Join Now</a>
+                </div>
+                <img src="./assest/img/img-user-coursera.svg" alt="user learn Coursera" class="img-user-coursera">
+                <!-- <h1>dsfsd</h1> -->
+            </div>
+        </div>
+        <!-- my -blog -->
+        <div class="my-blog">
+            <h2 class="head-title">Our blog</h2>
+            <p class="head-desc">Read our regular travel blog and know the latest update of tour and travel</p>
+            <div class="content">
+                <div class="item">
+                    <img src="./assest/img/img-blog1.svg" alt="img-blog1">
+                    <div class="body">
+                        <p class="title">21 November 2021</p>
+                        <div class="line"></div>
+                        <p class="desc">How to become a pro web designer in 2022 and get remot job?</p>
+                        <a href="" class="link-cta btn">Read More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assest/img/img-blog1.svg" alt="img-blog1">
+                    <div class="body">
+                        <p class="title">21 November 2021</p>
+                        <div class="line"></div>
+                        <p class="desc">How to become a pro web designer in 2022 and get remot job?</p>
+                        <a href="" class="link-cta btn">Read More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assest/img/img-blog1.svg" alt="img-blog1">
+                    <div class="body">
+                        <p class="title">21 November 2021</p>
+                        <div class="line"></div>
+                        <p class="desc">How to become a pro web designer in 2022 and get remot job?</p>
+                        <a href="#!" class="link-cta btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bacham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="content">
+                <div class="help-lesson">
+                    <strong class="lesson-strong">Lesson.</strong>
+                    <p>Need to help for your dream Career? trust us. With Lesson, study becomes a lot easier with us.
+                    </p>
+                    <div class="info-contact-social">
+                        <img src="./assest/img/Twitter.svg" alt="Twitter">
+                        <img src="./assest/img/Facebook.svg" alt="facebook">
+                        <img src="./assest/img/Linkedin.svg" alt="Linkedin">
+                        <img src="./assest/img/instagram.svg" alt="instagram">
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <strong>Company</strong>
+                    <div class="line">
+                        <!-- ----------- -->
+                    </div>
+                    <ul class="list">
+                        <li>About Us</li>
+                        <li>Features</li>
+                        <li>Our Pricing</li>
+                        <li>Latest News</li>
+                    </ul>
+
+
+                </div>
+                <div class="contact">
+                    <strong>Support</strong>
+                    <div class="line">
+                        <!-- ----------- -->
+                    </div>
+                    <ul class="list">
+                        <li>FAQ’s</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <strong>Address</strong>
+                    <div class="line">
+                        <!-- ----------- -->
+                    </div>
+                    <ul class="list">
+                        <li><strong>Location:</strong> 27 Division St, New York, NY 10002, USA</li>
+                        <li><strong>Email:</strong> email@gmail.com</li>
+                        <li><strong>Phone:</strong> + 000 1234 567 890</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">
+                Copyright ©2022 webdesign.gdn All rights reserved
+            </p>
+            </div>
+        </footer>
+
+    </main>
 
 </body>
 
