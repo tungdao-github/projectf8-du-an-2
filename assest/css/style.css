@@ -38,7 +38,7 @@ a:hover {
 .content {
     display: flex;
     width: 1170px;
-    max-width: calc(100% - 48px);
+    max-width: calc(100vw- 48px);
     /* margin-left: auto;
     margin-right: auto; */
     margin: auto;
@@ -384,10 +384,15 @@ a:hover {
     display: flex;
     width: 40px;
     height: 40px;
-    color: var(--third-color);
+    /* color: */
     padding: 14px 17px;
     border-radius: 40px;
-    background: #FFB900;
+    background: #ffffff;
+    border: 1px solid var(--third-color);
+}
+
+.popular-courses .content .row .action a:hover {
+    background: var(--third-color);
 }
 
 .popular-courses .content .row a+a {
@@ -469,6 +474,12 @@ a:hover {
     font-weight: 600;
     line-height: 1.85;
     border-radius: 25px;
+    /* 185.714% */
+}
+
+.popular-courses .content .group .link-cta:hover {
+    background: var(--third-color);
+
     /* 185.714% */
 }
 
@@ -757,12 +768,16 @@ a:hover {
     width: 118px;
     margin-top: 12px;
     border-radius: 25px;
-    background: #FFB900;
+    background: var(--primary-color);
     color: #FFF;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.85;
     /* 185.714% */
+}
+
+.my-blog .item .body .link-cta:hover {
+    background: var(--third-color);
 }
 
 .my-blog .bacham {
@@ -789,6 +804,8 @@ a:hover {
 .footer {
     padding-top: 96px;
     padding-bottom: 28px;
+    /* padding-left: 135px;
+    padding-bottom: 135px; */
     background: #2E2100;
 }
 
@@ -797,7 +814,6 @@ a:hover {
     /* align-items: center; */
     padding-bottom: 38px;
     border-bottom: 1px solid #59554B;
-    ;
 }
 
 .footer .content .help-lesson .lesson-strong {
@@ -853,15 +869,26 @@ a:hover {
     background: #59554B;
 }
 
-.footer .content .contact .list li {
+.footer .content .contact .list li a {
+    display: block;
     margin-top: 12px;
     color: #BFBCB2;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85;
+    white-space: nowrap;
     /* 185.714% */
 }
 
+.footer .content .contact .list-contact-we li a {
+    display: block;
+    width: 231px;
+    margin-top: 12px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
 
 .footer .copyright {
     display: flex;
